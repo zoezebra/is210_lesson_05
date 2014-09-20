@@ -62,5 +62,5 @@ elif PRINCIPAL >= 1000000:
 
 if RATE is not None:
     RATE = decimal.Decimal(R)
-    TOTAL = PRINCIPAL * ((1 + RATE / INTERVAL) ** (INTERVAL * T))
+    TOTAL = PRINCIPAL * ((1 + RATE / INTERVAL) ** (INTERVAL * DURATION))
     TOTAL = int(round(TOTAL))
