@@ -230,11 +230,14 @@ Specifications
         of any type.
 
     #.  Uses the following equation to calculate the temperature:
+    
+        .. code::
 
-            F = ((9 * C) / 5) + 32
+                9C     
+            F = -- + 32
+                 5     
             
             C is the temperature in Celsius
-            
             F is the temperature in Fahrenheit 
 
     #.  Returns a ``float`` of the temperature converted to Fahrenheit.
@@ -248,11 +251,14 @@ Specifications
         of any type.
 
     #.  Uses the following equation to calculate the temperature:
+    
+        .. code::
 
-            C= 5 * (F - 32) / 9
+                5(F - 32)
+            C = ---------
+                    9  
             
             C is the temperature in Celsius
-            
             F is the temperature in Fahrenheit
 
     #.  Returns a ``float`` of the temperature converted to Celsius.
