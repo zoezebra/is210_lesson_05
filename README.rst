@@ -231,13 +231,11 @@ Specifications
 
     #.  Uses the following equation to calculate the temperature:
 
-        .. math::
-
-            F=\frac{9C}{5}+32
-
-            \text{Where}\\
-            &C \text{ is the temperature in Celsius}\\
-            &F \text{ is the temperature in Fahrenheit}
+            F = ((9 * C) / 5) + 32
+            
+            C is the temperature in Celsius
+            
+            F is the temperature in Fahrenheit 
 
     #.  Returns a ``float`` of the temperature converted to Fahrenheit.
 
@@ -251,13 +249,11 @@ Specifications
 
     #.  Uses the following equation to calculate the temperature:
 
-        .. math::
-
-            C=\frac{5(F-32)}{9}
-
-            \text{Where}\\
-            &C \text{ is the temperature in Celsius}\\
-            &F \text{ is the temperature in Fahrenheit}
+            C= 5 * (F - 32) / 9
+            
+            C is the temperature in Celsius
+            
+            F is the temperature in Fahrenheit
 
     #.  Returns a ``float`` of the temperature converted to Celsius.
 
@@ -294,17 +290,17 @@ Examples
 
     >>> import task_03
     >>> task_03.celsius_to_fahrenheit(42)
-    107.6
+    107
     >>> task_03.fahrenheit_to_celsius(42)
-    18.0
+    5
     >>> task_03.convert_temperature('42F', 'c')
-    107.6
+    5.555555555555555
     >>> task_03.convert_temperature('107.6F', 'f')
     107.6
     >>> task_03.convert_temperature('42C')
-    42
+    42.0
     >>> task_03.convert_temperature('42C', 'f')
-    18.0
+    107.6
     >>> task_03.convert_temperature('42C', 'p')
     None
     >>> task_03.convert_temperature(42)
